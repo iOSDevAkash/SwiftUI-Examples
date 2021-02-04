@@ -353,9 +353,11 @@ struct ContentView: View {
                     }
                 }
                 
-            }.frame( idealWidth: .infinity, maxWidth: .infinity, maxHeight: .infinity)
-            .navigationBarTitle(Text("Elements"))
+            }
             .ignoresSafeArea()
+            .frame( idealWidth: .infinity, maxWidth: .infinity, maxHeight: .infinity)
+            .navigationBarTitle(Text("Elements"))
+           
         }
         #endif
         

@@ -22,7 +22,7 @@ struct AQHome: View {
                         Text("View Layout and Presentation")
                     })
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination: AQShapes(),
                     label: {
                         Text("Drawing and Animation")
                     })
@@ -32,7 +32,7 @@ struct AQHome: View {
                         Text("Others")
                     })
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
