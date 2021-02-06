@@ -32,6 +32,7 @@ struct AQHome: View {
                         Text("Others")
                     })
             }
+            
         }.navigationViewStyle(StackNavigationViewStyle())
     }
 }

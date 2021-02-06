@@ -172,7 +172,7 @@ struct ContentView: View {
         #endif
         
         #if os(iOS)
-        NavigationView{
+       
             Form {
                 Group  {
                     Section(header: Text("Text")) {
@@ -358,7 +358,7 @@ struct ContentView: View {
             .frame( idealWidth: .infinity, maxWidth: .infinity, maxHeight: .infinity)
             .navigationBarTitle(Text("Elements"))
            
-        }
+        
         #endif
         
         

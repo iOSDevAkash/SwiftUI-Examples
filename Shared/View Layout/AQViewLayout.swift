@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AQViewLayout: View {
     var body: some View {
-        NavigationView{
+       
             Form {
                 Group {
                     List {
@@ -93,7 +93,7 @@ struct AQViewLayout: View {
                 }
             }
         }
-    }
+    
 }
 
 struct AQViewLayout_Previews: PreviewProvider {
