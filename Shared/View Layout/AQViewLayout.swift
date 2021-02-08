@@ -91,6 +91,40 @@ struct AQViewLayout: View {
                         }
                     }
                 }
+                
+                Group {
+                    List {
+                        Section(header: Text("Form")) {
+                        
+                            NavigationLink(destination: AQForms()) {
+                                HStack{
+                                    Image(systemName:"list.bullet.rectangle")
+                                    Text("Forms")
+                                }
+                            }
+                            NavigationLink(destination: AQGroup()) {
+                                HStack{
+                                    Image(systemName:"list.bullet.rectangle")
+                                    Text("Form with Groups")
+                                }
+                            }
+                            NavigationLink(destination: AQGroupBox()) {
+                                HStack{
+                                    Image(systemName:"list.bullet.rectangle")
+                                    Text("Form with GroupBox")
+                                }
+                            }
+                            NavigationLink(destination: AQSection()) {
+                                HStack{
+                                    Image(systemName:"list.bullet.rectangle")
+                                    Text("Form with Sections")
+                                }
+                            }
+                           
+                            
+                        }
+                    }
+                }
             }
         }
     

@@ -66,6 +66,11 @@
 		DC1A1A6A25C1DC54003C6386 /* CustomViewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1A5F25C1DC54003C6386 /* CustomViewsListCell.swift */; };
 		DC1A1A6B25C1DC54003C6386 /* CustomViewsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1A5F25C1DC54003C6386 /* CustomViewsListCell.swift */; };
 		DC8163EB25C479C100095282 /* AQAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8163EA25C479C100095282 /* AQAlert.swift */; };
+		DC88C2B725D0603800D5AA89 /* AQForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88C2B625D0603800D5AA89 /* AQForms.swift */; };
+		DC88C2C025D0657600D5AA89 /* AQForms.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88C2B625D0603800D5AA89 /* AQForms.swift */; };
+		DC88C2C625D066F600D5AA89 /* AQGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88C2C525D066F600D5AA89 /* AQGroup.swift */; };
+		DC88C2CC25D0670400D5AA89 /* AQGroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88C2CB25D0670400D5AA89 /* AQGroupBox.swift */; };
+		DC88C2D225D0670E00D5AA89 /* AQSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88C2D125D0670E00D5AA89 /* AQSection.swift */; };
 		DCAF39ED25C87D8600691DB3 /* AQHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF39EC25C87D8600691DB3 /* AQHome.swift */; };
 		DCAF39EE25C87D8600691DB3 /* AQHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF39EC25C87D8600691DB3 /* AQHome.swift */; };
 		DCAF39F425C87F1900691DB3 /* AQViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAF39F325C87F1900691DB3 /* AQViewLayout.swift */; };
@@ -138,6 +143,10 @@
 		DC1A1A5E25C1DC54003C6386 /* AQImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQImage.swift; sourceTree = "<group>"; };
 		DC1A1A5F25C1DC54003C6386 /* CustomViewsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewsListCell.swift; sourceTree = "<group>"; };
 		DC8163EA25C479C100095282 /* AQAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQAlert.swift; sourceTree = "<group>"; };
+		DC88C2B625D0603800D5AA89 /* AQForms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQForms.swift; sourceTree = "<group>"; };
+		DC88C2C525D066F600D5AA89 /* AQGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQGroup.swift; sourceTree = "<group>"; };
+		DC88C2CB25D0670400D5AA89 /* AQGroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQGroupBox.swift; sourceTree = "<group>"; };
+		DC88C2D125D0670E00D5AA89 /* AQSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQSection.swift; sourceTree = "<group>"; };
 		DCAF39EC25C87D8600691DB3 /* AQHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQHome.swift; sourceTree = "<group>"; };
 		DCAF39F325C87F1900691DB3 /* AQViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQViewLayout.swift; sourceTree = "<group>"; };
 		DCAF3A1625C9C79600691DB3 /* AQShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQShapes.swift; sourceTree = "<group>"; };
@@ -279,6 +288,7 @@
 		DC1A1A0C25C1DC0B003C6386 /* View Layout */ = {
 			isa = PBXGroup;
 			children = (
+				DC88C2B525D0602400D5AA89 /* ContainerViews */,
 				DC8163E925C4799F00095282 /* Alerts */,
 				DCBD307725C3D21E00336DFC /* SpacerDivider */,
 				DCBD306625C3CF4100336DFC /* Grids */,
@@ -376,6 +386,17 @@
 				DC8163EA25C479C100095282 /* AQAlert.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		DC88C2B525D0602400D5AA89 /* ContainerViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC88C2B625D0603800D5AA89 /* AQForms.swift */,
+				DC88C2C525D066F600D5AA89 /* AQGroup.swift */,
+				DC88C2CB25D0670400D5AA89 /* AQGroupBox.swift */,
+				DC88C2D125D0670E00D5AA89 /* AQSection.swift */,
+			);
+			path = ContainerViews;
 			sourceTree = "<group>";
 		};
 		DCAF3A1525C9C77E00691DB3 /* Drawing and Animation */ = {
@@ -572,12 +593,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1A1A3D25C1DC0B003C6386 /* AQTextWithDate.swift in Sources */,
+				DC88C2D225D0670E00D5AA89 /* AQSection.swift in Sources */,
 				DCBD307925C3D23100336DFC /* AQSpacer.swift in Sources */,
 				DC1A19F125C1DBED003C6386 /* ContentView.swift in Sources */,
 				DCAF3A1725C9C79600691DB3 /* AQShapes.swift in Sources */,
 				DCBD308325C3D5FA00336DFC /* AQDivider.swift in Sources */,
 				DC1A1A3125C1DC0B003C6386 /* AQColorPicker.swift in Sources */,
 				DC1A19EF25C1DBED003C6386 /* AQCoreSwiftUIKitApp.swift in Sources */,
+				DC88C2C625D066F600D5AA89 /* AQGroup.swift in Sources */,
 				DCAF39ED25C87D8600691DB3 /* AQHome.swift in Sources */,
 				DC1A1A3325C1DC0B003C6386 /* AQPicker.swift in Sources */,
 				DC1A1A2F25C1DC0B003C6386 /* AQStepper.swift in Sources */,
@@ -590,6 +613,7 @@
 				DC1A1A6025C1DC54003C6386 /* PlayGroundView.swift in Sources */,
 				DC1A1A2925C1DC0B003C6386 /* AQSlider.swift in Sources */,
 				DCBD305025C3BC3000336DFC /* AQHStack.swift in Sources */,
+				DC88C2B725D0603800D5AA89 /* AQForms.swift in Sources */,
 				DC1A1A6825C1DC54003C6386 /* AQImage.swift in Sources */,
 				DC1A1A3F25C1DC0B003C6386 /* AQTextStyle.swift in Sources */,
 				DC1A1A5425C1DC48003C6386 /* CustomViewsPane.swift in Sources */,
@@ -607,6 +631,7 @@
 				DC1A1A4525C1DC0B003C6386 /* AQLabel.swift in Sources */,
 				DC1A1A6425C1DC54003C6386 /* topBar.swift in Sources */,
 				DCBD306825C3CF8000336DFC /* AQLazyHGrid.swift in Sources */,
+				DC88C2CC25D0670400D5AA89 /* AQGroupBox.swift in Sources */,
 				DC1A1A3525C1DC0B003C6386 /* AQTextField.swift in Sources */,
 				DC1A1A4D25C1DC41003C6386 /* DetailPane.swift in Sources */,
 			);
@@ -641,6 +666,7 @@
 				DC1A1A2425C1DC0B003C6386 /* AQLinks.swift in Sources */,
 				DC1A1A4425C1DC0B003C6386 /* AQProgressView.swift in Sources */,
 				DC1A1A4625C1DC0B003C6386 /* AQLabel.swift in Sources */,
+				DC88C2C025D0657600D5AA89 /* AQForms.swift in Sources */,
 				DC1A1A6525C1DC54003C6386 /* topBar.swift in Sources */,
 				DC1A1A3625C1DC0B003C6386 /* AQTextField.swift in Sources */,
 				DC1A1A4E25C1DC41003C6386 /* DetailPane.swift in Sources */,
