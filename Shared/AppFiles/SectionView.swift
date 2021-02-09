@@ -2,7 +2,7 @@
 //  SectionView.swift
 //  SwiftUI Kit
 //
-//  Created by Jordan Singer on 7/10/20.
+//  
 //
 
 import SwiftUI

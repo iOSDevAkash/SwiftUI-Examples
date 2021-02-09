@@ -289,7 +289,7 @@ struct ContentView: View {
                 Group {
                     List {
                         Section(header: Text("Value Selectors")) {
-                            var value = Type.Slider
+                            let value = Type.Slider
                             NavigationLink(destination: AQSlider()) {
                                 HStack{
                                     Image(systemName:value.Image)

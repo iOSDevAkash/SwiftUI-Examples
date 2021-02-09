@@ -125,6 +125,26 @@ struct AQViewLayout: View {
                         }
                     }
                 }
+                Group {
+                    List {
+                        Section(header: Text("Lists")) {
+                        
+                            NavigationLink(destination: AQLists()) {
+                                HStack{
+                                    Image(systemName:"list.bullet.rectangle")
+                                    Text("List")
+                                }
+                            }
+                            NavigationLink(destination: AQScrollView()) {
+                                HStack{
+                                    Image(systemName:"list.bullet.rectangle")
+                                    Text("ScollView")
+                                }
+                            }
+                            
+                        }
+                    }
+                }
             }
         }
     

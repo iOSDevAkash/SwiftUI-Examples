@@ -40,7 +40,7 @@ struct AQShapes: View {
                     Text("RoundedCornerStyle.continuous")
                         .font(.footnote)
                 
-                }.frame(width: .infinity, height: 200, alignment: .center)
+                }.frame(width: .infinity, height: 200)
             }
             
         }
