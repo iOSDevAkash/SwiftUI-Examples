@@ -57,7 +57,7 @@ struct SwiftUIWebView: UIViewRepresentable {
 struct SwiftUIWebView_Previews: PreviewProvider {
     static var previews: some View {
         
-        SwiftUIWebView(viewModel: WebViewModel(link: "https://gist.github.com/iOSDevAkash/890062c9224fd35c37a7cc3a1f4d70b4.js"))
+        SwiftUIWebView(viewModel: WebViewModel(link: "https://gist.github.com/iOSDevAkash/43adb57b9ae314b3f0127271ad88529f.js"))
         //WebView(request: URLRequest(url: URL(string: "https://www.apple.com")!))
     }
 }
