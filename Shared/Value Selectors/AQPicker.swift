@@ -26,7 +26,7 @@ struct AQPicker: View {
                 }
                 
             }
-            Section {
+            Group {
                 SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",topTitle: ".pickerStyle(SegmentedPickerStyle())") {
                     Picker("Flavor", selection: $selectedFlavor) {
                         Text("Chocolate").tag(Flavor.chocolate)

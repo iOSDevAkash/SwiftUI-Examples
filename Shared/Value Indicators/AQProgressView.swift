@@ -18,14 +18,14 @@ struct AQProgressView: View {
                 }
                 
             }
-            SectionView(title: "ProgressView", description: "A view that shows the progress towards completion of a task.",topTitle: ".LinearProgressViewStyle") {
+            SectionView(title: "ProgressView", description: "Loader is Linear in shape",topTitle: ".LinearProgressViewStyle") {
                 VStack {
                     ProgressView(value: progress)
                         .progressViewStyle(LinearProgressViewStyle())
                 }
                 
             }
-            SectionView(title: "ProgressView", description: "A view that shows the progress towards completion of a task.",topTitle: ".LinearProgressViewStyle") {
+            SectionView(title: "ProgressView", description: "Loader is circular in shape",topTitle: ".CircularProgressViewStyle") {
                 VStack {
                     ProgressView(value: progress)
                         .progressViewStyle(CircularProgressViewStyle())
@@ -33,8 +33,31 @@ struct AQProgressView: View {
                 
             }
             HStack{
-            Button("More", action: { progress += 0.05 })
-            Button("Reset", action: { progress = 0.00 })
+                Button(action: {}, label: {
+                    Text("More")
+                })
+                .onTapGesture {
+                    progress += 0.05
+                }
+                Spacer()
+                Button(action: {}, label: {
+                    Text("Reduce")
+                })
+                .onTapGesture {
+                    if progress <= 0 {
+                        progress = 0
+                    }else {
+                        progress -= 0.05
+                    }
+                }
+                Spacer()
+                Button(action: {}, label: {
+                    Text("Reset")
+                })
+                .onTapGesture {
+                    progress = 0.00
+                }
+                
             }
         }
     }

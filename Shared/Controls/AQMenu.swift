@@ -11,7 +11,7 @@ struct AQMenu: View {
     var body: some View {
         Form {
             SectionView(title: "Menu", description: "A control for presenting a menu of actions.") {
-                Menu("Actions") {
+                Menu("Click Here") {
                     Button("Duplicate", action: {})
                     Button("Rename", action: {})
                     Button("Delete…", action: {})
@@ -22,9 +22,9 @@ struct AQMenu: View {
                     }
                 }
             }
-            Section{
+            Group{
                 SectionView(title: "Menu", description: "A control for presenting a menu of actions.",topTitle: ".menuStyle(DefaultMenuStyle())") {
-                    Menu("Actions") {
+                    Menu("Click Here") {
                         Button("Duplicate", action: {})
                         Button("Rename", action: {})
                         Button("Delete…", action: {})
@@ -37,7 +37,7 @@ struct AQMenu: View {
                 }
                 #if os(OSX)
                 SectionView(title: "Menu", description: "A control for presenting a menu of actions.",topTitle: ".menuStyle(BorderedButtonMenuStyle())") {
-                    Menu("Actions") {
+                    Menu("Click Here") {
                         Button("Duplicate", action: {})
                         Button("Rename", action: {})
                         Button("Delete…", action: {})
@@ -50,7 +50,7 @@ struct AQMenu: View {
                 }
                 #endif
                 SectionView(title: "Menu", description: "A control for presenting a menu of actions.",topTitle: ".menuStyle(BorderlessButtonMenuStyle())") {
-                    Menu("Actions") {
+                    Menu("Click Here") {
                         Button("Duplicate", action: {})
                         Button("Rename", action: {})
                         Button("Delete…", action: {})

@@ -20,7 +20,7 @@ struct AQDatePicker: View {
                 .datePickerStyle(DefaultDatePickerStyle())
                 
             }
-            Section {
+            Group {
                 #if os(iOS)
                 SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",topTitle: ".pickerStyle(DefaultDatePickerStyle())") {
                     DatePicker(

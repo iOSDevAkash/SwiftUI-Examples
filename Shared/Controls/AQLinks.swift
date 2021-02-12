@@ -9,11 +9,12 @@ import SwiftUI
 
 struct AQLinks: View {
     var body: some View {
-        SectionView(title: "Link", description: "A control for navigating to a URL.", content: {
-                        Link("View Our Terms of Service", destination: URL(string: "https://www.example.com/TOS.html")!)
-            
-        })
-        
+        Form {
+            SectionView(title: "Link", description: "A control for navigating to a URL.", content: {
+                Link("View Our Terms of Service", destination: URL(string: "https://www.example.com/TOS.html")!)
+                
+            })
+        }
     }
 }
 

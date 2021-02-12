@@ -23,6 +23,8 @@ struct AQLists: View {
             Text("This is using .listStyle(GroupedListStyle())")
                 .font(.footnote)
             Spacer()
+            Divider()
+            
             SectionView(title: "InsetGroupedListStyle", description: "") {
                 List {
                     Text("Hello world")

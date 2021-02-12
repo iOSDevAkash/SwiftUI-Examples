@@ -86,6 +86,7 @@
 		DCBD307225C3D0E300336DFC /* AQLazyVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD307125C3D0E300336DFC /* AQLazyVGrid.swift */; };
 		DCBD307925C3D23100336DFC /* AQSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD307825C3D23100336DFC /* AQSpacer.swift */; };
 		DCBD308325C3D5FA00336DFC /* AQDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD308225C3D5FA00336DFC /* AQDivider.swift */; };
+		DCDFFCBE25D432D30017162F /* AQAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFFCBD25D432D30017162F /* AQAnimations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,7 @@
 		DCBD307125C3D0E300336DFC /* AQLazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQLazyVGrid.swift; sourceTree = "<group>"; };
 		DCBD307825C3D23100336DFC /* AQSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQSpacer.swift; sourceTree = "<group>"; };
 		DCBD308225C3D5FA00336DFC /* AQDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQDivider.swift; sourceTree = "<group>"; };
+		DCDFFCBD25D432D30017162F /* AQAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQAnimations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				DCAF3A1625C9C79600691DB3 /* AQShapes.swift */,
+				DCDFFCBD25D432D30017162F /* AQAnimations.swift */,
 			);
 			path = "Drawing and Animation";
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				DC8163EB25C479C100095282 /* AQAlert.swift in Sources */,
 				DCBD307225C3D0E300336DFC /* AQLazyVGrid.swift in Sources */,
 				DC1A1A4525C1DC0B003C6386 /* AQLabel.swift in Sources */,
+				DCDFFCBE25D432D30017162F /* AQAnimations.swift in Sources */,
 				DC1A1A6425C1DC54003C6386 /* topBar.swift in Sources */,
 				DCBD306825C3CF8000336DFC /* AQLazyHGrid.swift in Sources */,
 				DC88C2CC25D0670400D5AA89 /* AQGroupBox.swift in Sources */,
