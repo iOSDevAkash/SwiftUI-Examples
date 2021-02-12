@@ -87,6 +87,7 @@
 		DCBD307925C3D23100336DFC /* AQSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD307825C3D23100336DFC /* AQSpacer.swift */; };
 		DCBD308325C3D5FA00336DFC /* AQDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBD308225C3D5FA00336DFC /* AQDivider.swift */; };
 		DCDFFCBE25D432D30017162F /* AQAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDFFCBD25D432D30017162F /* AQAnimations.swift */; };
+		DCFB7F1325D7012500D8BD0D /* DrawingAndAnimationHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFB7F1225D7012400D8BD0D /* DrawingAndAnimationHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		DCBD307825C3D23100336DFC /* AQSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQSpacer.swift; sourceTree = "<group>"; };
 		DCBD308225C3D5FA00336DFC /* AQDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQDivider.swift; sourceTree = "<group>"; };
 		DCDFFCBD25D432D30017162F /* AQAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQAnimations.swift; sourceTree = "<group>"; };
+		DCFB7F1225D7012400D8BD0D /* DrawingAndAnimationHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingAndAnimationHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,7 @@
 			children = (
 				DCAF3A1625C9C79600691DB3 /* AQShapes.swift */,
 				DCDFFCBD25D432D30017162F /* AQAnimations.swift */,
+				DCFB7F1225D7012400D8BD0D /* DrawingAndAnimationHome.swift */,
 			);
 			path = "Drawing and Animation";
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 				DC1A1A2325C1DC0B003C6386 /* AQLinks.swift in Sources */,
 				DC1A1A4325C1DC0B003C6386 /* AQProgressView.swift in Sources */,
 				DC8163EB25C479C100095282 /* AQAlert.swift in Sources */,
+				DCFB7F1325D7012500D8BD0D /* DrawingAndAnimationHome.swift in Sources */,
 				DCBD307225C3D0E300336DFC /* AQLazyVGrid.swift in Sources */,
 				DC1A1A4525C1DC0B003C6386 /* AQLabel.swift in Sources */,
 				DCDFFCBE25D432D30017162F /* AQAnimations.swift in Sources */,
