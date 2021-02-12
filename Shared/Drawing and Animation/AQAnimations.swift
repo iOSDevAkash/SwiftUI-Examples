@@ -11,14 +11,20 @@ struct AQAnimations: View {
     @State private var startAnimation: Bool = false
     
     var body: some View {
-        NavigationView{
+        
             VStack{
+                Spacer(minLength: 40)
                 HStack {
-                    Text("🛶")
+                    Text("🐆")
                         .font(.custom("Arial", size: 50))
                         .offset(x: self.startAnimation ?  UIScreen.main.bounds.width - 50 : 0)
                     Spacer()
-                }
+                }.overlay(
+                Ellipse()
+                    .stroke()
+                    .frame(width: 40, height: 90, alignment: .center)
+                    
+                )
                 Form {
                     SectionView(title: "easeIn", description: "An eased-in animation starts off slow and picks up speed over time. This is good for animations that start from a resting point and finish off-screen.") {
                         VStack{
@@ -92,7 +98,7 @@ struct AQAnimations: View {
             }.navigationBarTitle("Animation", displayMode: .inline)
             
         }
-    }
+    
 }
 struct AQAnimations_Previews: PreviewProvider {
     static var previews: some View {
