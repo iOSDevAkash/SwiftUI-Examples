@@ -19,6 +19,7 @@ class WebViewModel: ObservableObject {
 }
 
 struct SwiftUIWebView: UIViewRepresentable {
+    
     @ObservedObject var viewModel: WebViewModel
 
     let webView = WKWebView()
