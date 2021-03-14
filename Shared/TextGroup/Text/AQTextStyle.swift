@@ -26,7 +26,7 @@ struct AQTextStyle: View {
                     Text("This Text is underlined")
                         .underline()
                 }
-                SectionView(title: "underline", description: "Applies a underlined to the text with color") {
+                SectionView(title: "underline", description: "Underline color can be changed using different init method") {
                     Text("This Text is underlined with red color")
                         .underline(true, color: Color.red)
                 }

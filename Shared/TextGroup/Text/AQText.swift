@@ -12,12 +12,12 @@ struct AQText: View {
      
             Form {
                 
-                SectionView(title: "Text", description: "Creates a text view that displays a string literal without localization") {
+                SectionView(title: "Text", description: "Creates a text view that displays a string literal without localization", codeSample: "Text(\"Your Text Here\")") {
                     
                     Text("Your Text Here")
                 }
                 
-                SectionView(title: "ForegroundColor", description: "Setting the color of the text displayed by this view.") {
+                SectionView(title: "ForegroundColor", description: "You can change font color setting foregroundcolor",codeSample: "Text(\"Your Text Here\")\n.foregroundColor(.red)") {
                     VStack {
                         Text("Red").foregroundColor(.red)
                         Text("Green").foregroundColor(.green)
@@ -27,6 +27,8 @@ struct AQText: View {
                 Group {
                     Text("Font Styles")
                         .font(.headline)
+                    Text("The system provided font styles are added below")
+                        .font(.footnote)
                     Group{
                         SectionView(title: ".largeTitle", description: "case .largeTitle", content: {
                             Text("A font with the large title text style.")
@@ -86,11 +88,11 @@ struct AQText: View {
                     }
                 }
                 Group{
-                    SectionView(title: "fontWeight", description: "Sets the font weight of the text.", topTitle: ".bold") {
+                    SectionView(title: "fontWeight", description: "Sets the font weight of the text.", codeSample: ".bold") {
                         Text("This Text has font weight Bold.")
                             .fontWeight(.bold)
                     }
-                    SectionView(title: "italic", description: "Sets the font italic.", topTitle: ".italic") {
+                    SectionView(title: "italic", description: "Sets the font italic.", codeSample: ".italic") {
                         Text("This is italic Text.")
                             .italic()
                         

@@ -29,7 +29,7 @@ struct AQStepper: View {
     
     var body: some View {
         Form {
-            SectionView(title: "Stepper", description: "A control that performs increment and decrement actions.",topTitle: ".DefaultToggleStyle") {
+            SectionView(title: "Stepper", description: "A control that performs increment and decrement actions.",codeSample: ".DefaultToggleStyle") {
                 Stepper(onIncrement: incrementStep,
                         onDecrement: decrementStep) {
                     Text("Value: \(value) Color: \(colors[value].description)")
@@ -37,7 +37,7 @@ struct AQStepper: View {
                 .padding(5)
                 .background(colors[value])
             }
-            SectionView(title: "Stepper", description: "A control that performs increment and decrement actions.",topTitle: ".DefaultToggleStyle") {
+            SectionView(title: "Stepper", description: "A control that performs increment and decrement actions.",codeSample: ".DefaultToggleStyle") {
                 VStack{
                     Stepper(value: $items,
                             in: range,

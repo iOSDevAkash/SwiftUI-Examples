@@ -13,7 +13,7 @@ struct AQSlider: View {
     var body: some View {
         
         Form {
-            SectionView(title: "Slider", description: "A control for selecting a value from a bounded linear range of values.",topTitle: ".DefaultToggleStyle") {
+            SectionView(title: "Slider", description: "A control for selecting a value from a bounded linear range of values.",codeSample: ".DefaultToggleStyle") {
                 VStack {
                     Slider(
                         value: $speed,
@@ -26,7 +26,7 @@ struct AQSlider: View {
                         .foregroundColor(isEditing ? .red : .blue)
                 }
             }
-            SectionView(title: "Slider", description: "A control for selecting a value from a bounded linear range of values.",topTitle: "Slider with Step 5") {
+            SectionView(title: "Slider", description: "A control for selecting a value from a bounded linear range of values.",codeSample: "Slider with Step 5") {
                 VStack {
                     Slider(
                         value: $speed,

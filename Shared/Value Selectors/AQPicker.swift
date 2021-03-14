@@ -18,7 +18,7 @@ struct AQPicker: View {
     @State private var selectedFlavor = Flavor.chocolate
     var body: some View {
         Form {
-            SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",topTitle: ".DefaultToggleStyle") {
+            SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",codeSample: ".DefaultToggleStyle") {
                 Picker("Flavor", selection: $selectedFlavor) {
                     Text("Chocolate").tag(Flavor.chocolate)
                     Text("Vanilla").tag(Flavor.vanilla)
@@ -27,7 +27,7 @@ struct AQPicker: View {
                 
             }
             Group {
-                SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",topTitle: ".pickerStyle(SegmentedPickerStyle())") {
+                SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",codeSample: ".pickerStyle(SegmentedPickerStyle())") {
                     Picker("Flavor", selection: $selectedFlavor) {
                         Text("Chocolate").tag(Flavor.chocolate)
                         Text("Vanilla").tag(Flavor.vanilla)
@@ -37,7 +37,7 @@ struct AQPicker: View {
                     
                 }
                 #if os(OSX)
-                SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",topTitle: ".DefaultToggleStyle") {
+                SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",codeSample: ".DefaultToggleStyle") {
                     Picker("Flavor", selection: $selectedFlavor) {
                         Text("Chocolate").tag(Flavor.chocolate)
                         Text("Vanilla").tag(Flavor.vanilla)
@@ -48,7 +48,7 @@ struct AQPicker: View {
                 }
                 #endif
                 #if os(iOS)
-                SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",topTitle: ".DefaultToggleStyle") {
+                SectionView(title: "Toggle", description: "A control for selecting from a set of mutually exclusive values.",codeSample: ".DefaultToggleStyle") {
                     Picker("Flavor", selection: $selectedFlavor) {
                         Text("Chocolate").tag(Flavor.chocolate)
                         Text("Vanilla").tag(Flavor.vanilla)

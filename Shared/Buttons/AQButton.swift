@@ -16,30 +16,30 @@ struct AQButton: View {
     ]
     var body: some View {
         Form{
-            SectionView(title: "Button", description: "A control that performs an action when triggered.",topTitle: "Default") {
+            SectionView(title: "Button", description: "A control that performs an action when triggered.",codeSample: "Default") {
                 Button("Sign In", action: {})
             }
             Section {
-                SectionView(title: "Button", description: "A control that performs an action when triggered.",topTitle: ".DefaultButtonStyle") {
+                SectionView(title: "Button", description: "A control that performs an action when triggered.",codeSample: ".DefaultButtonStyle") {
                     Button("Sign In", action: {})
                         .buttonStyle(DefaultButtonStyle())
                 }
-                SectionView(title: "Button", description: "A control that performs an action when triggered.",topTitle: ".PlainButtonStyle") {
+                SectionView(title: "Button", description: "A control that performs an action when triggered.",codeSample: ".PlainButtonStyle") {
                     Button("Sign In", action: {})
                         .buttonStyle(PlainButtonStyle())
                 }
                 #if os(OSX)
-                SectionView(title: "Button", description: "A control that performs an action when triggered.",topTitle: ".BorderedButtonStyle") {
+                SectionView(title: "Button", description: "A control that performs an action when triggered.",codeSample: ".BorderedButtonStyle") {
                     Button("Sign In", action: {})
                         .buttonStyle(BorderedButtonStyle())
                 }
                 #endif
-                SectionView(title: "Button", description: "A control that performs an action when triggered.",topTitle: ".BorderlessButtonStyle") {
+                SectionView(title: "Button", description: "A control that performs an action when triggered.",codeSample: ".BorderlessButtonStyle") {
                     Button("Sign In", action: {})
                         .buttonStyle(BorderlessButtonStyle())
                 }
                 #if os(tvOS)
-                SectionView(title: "Button", description: "A control that performs an action when triggered.",topTitle: ".BorderedButtonStyle") {
+                SectionView(title: "Button", description: "A control that performs an action when triggered.",codeSample: ".BorderedButtonStyle") {
                     Button("Sign In", action: {})
                         .buttonStyle(CardButtonStyle())
                 }

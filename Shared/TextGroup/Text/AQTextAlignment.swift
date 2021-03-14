@@ -11,20 +11,21 @@ struct AQTextAlignment: View {
     var body: some View {
         Form{
         Text("Aligns the child view within its bounds given anchor types")
-        SectionView(title: ".leading", description: "case .leading", content: {
-            Text("A font with the leading TextAlignment")
-                .frame(width: 100, height: 60)
+            
+        SectionView(title: ".leading", description: "multilineTextAlignment(.leading)", content: {
+            Text("A font with the leading TextAlignment.A font with the leading TextAlignment.A font with the leading TextAlignment.A font with the leading TextAlignment")
                 .multilineTextAlignment(.leading)
         })
         SectionView(title: ".center", description: "case .center", content: {
-            Text("A font with the center TextAlignment")
-                .frame(width: 100, height: 60)
+            Text("A font with the center TextAlignment.A font with the center TextAlignment.A font with the center TextAlignment.A font with the center TextAlignment")
                 .multilineTextAlignment(.center)
         })
         SectionView(title: ".trailing", description: "case .trailing", content: {
-            Text("A font with the trailing TextAlignment")
-                .frame(width: 100, height: 60)
-                .multilineTextAlignment(.trailing)
+            HStack{
+                Text("A font with the trailing TextAlignment A font with the trailing TextAlignment A font with the trailing TextAlignment")
+                    .multilineTextAlignment(.trailing)
+            }
+           
                 
         })
         }

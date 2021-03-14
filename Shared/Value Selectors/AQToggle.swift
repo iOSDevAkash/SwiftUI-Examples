@@ -11,21 +11,21 @@ struct AQToggle: View {
     @State private var vibrateOnRing = false
     var body: some View {
         Form {
-            SectionView(title: "Toggle", description: "A control that toggles between on and off states.",topTitle: ".DefaultToggleStyle") {
+            SectionView(title: "Toggle", description: "A control that toggles between on and off states.",codeSample: ".DefaultToggleStyle") {
                 Toggle(isOn: $vibrateOnRing, label: {
                     Text("Vibrate on Ring")
                 })
                 .toggleStyle(DefaultToggleStyle())
             }
             
-            SectionView(title: "Toggle", description: "A control that toggles between on and off states.",topTitle: ".SwitchToggleStyle") {
+            SectionView(title: "Toggle", description: "A control that toggles between on and off states.",codeSample: ".SwitchToggleStyle") {
                 Toggle(isOn: $vibrateOnRing, label: {
                     Text("Vibrate on Ring")
                 })
                 .toggleStyle(SwitchToggleStyle())
             }
             #if os(OSX)
-            SectionView(title: "Toggle", description: "A control that toggles between on and off states.",topTitle: ".CheckboxToggleStyle") {
+            SectionView(title: "Toggle", description: "A control that toggles between on and off states.",codeSample: ".CheckboxToggleStyle") {
                 Toggle(isOn: $vibrateOnRing, label: {
                     Text("Vibrate on Ring")
                 })

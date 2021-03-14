@@ -11,21 +11,21 @@ struct AQProgressView: View {
     @State private var progress = 0.5
     var body: some View {
         Form{
-            SectionView(title: "ProgressView", description: "A view that shows the progress towards completion of a task.",topTitle: ".DefaultProgressViewStyle") {
+            SectionView(title: "ProgressView", description: "A view that shows the progress towards completion of a task.",codeSample: ".DefaultProgressViewStyle") {
                 VStack {
                     ProgressView(value: progress)
                         .progressViewStyle(DefaultProgressViewStyle())
                 }
                 
             }
-            SectionView(title: "ProgressView", description: "Loader is Linear in shape",topTitle: ".LinearProgressViewStyle") {
+            SectionView(title: "ProgressView", description: "Loader is Linear in shape",codeSample: ".LinearProgressViewStyle") {
                 VStack {
                     ProgressView(value: progress)
                         .progressViewStyle(LinearProgressViewStyle())
                 }
                 
             }
-            SectionView(title: "ProgressView", description: "Loader is circular in shape",topTitle: ".CircularProgressViewStyle") {
+            SectionView(title: "ProgressView", description: "Loader is circular in shape",codeSample: ".CircularProgressViewStyle") {
                 VStack {
                     ProgressView(value: progress)
                         .progressViewStyle(CircularProgressViewStyle())

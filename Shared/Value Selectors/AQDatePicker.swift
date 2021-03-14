@@ -11,7 +11,7 @@ struct AQDatePicker: View {
     @State private var date = Date()
     var body: some View {
         Form {
-            SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",topTitle: ".pickerStyle(DefaultDatePickerStyle())") {
+            SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",codeSample: ".pickerStyle(DefaultDatePickerStyle())") {
                 DatePicker(
                         "Start Date",
                         selection: $date,
@@ -22,7 +22,7 @@ struct AQDatePicker: View {
             }
             Group {
                 #if os(iOS)
-                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",topTitle: ".pickerStyle(DefaultDatePickerStyle())") {
+                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",codeSample: ".pickerStyle(DefaultDatePickerStyle())") {
                     DatePicker(
                             "Start Date",
                             selection: $date,
@@ -33,7 +33,7 @@ struct AQDatePicker: View {
                 }
                 #endif
                 #if os(OSX)
-                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",topTitle: ".datePickerStyle(FieldDatePickerStyle())") {
+                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",codeSample: ".datePickerStyle(FieldDatePickerStyle())") {
                     DatePicker(
                             "Start Date",
                             selection: $date,
@@ -43,7 +43,7 @@ struct AQDatePicker: View {
                     
                 }
                 #endif
-                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",topTitle: ".datePickerStyle(GraphicalDatePickerStyle())") {
+                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",codeSample: ".datePickerStyle(GraphicalDatePickerStyle())") {
                     DatePicker(
                             "Start Date",
                             selection: $date,
@@ -53,7 +53,7 @@ struct AQDatePicker: View {
                     
                 }
                 #if os(OSX)
-                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",topTitle: ".datePickerStyle(StepperFieldDatePickerStyle())") {
+                SectionView(title: "DatePicker", description: "A control for selecting an absolute date.",codeSample: ".datePickerStyle(StepperFieldDatePickerStyle())") {
                     DatePicker(
                             "Start Date",
                             selection: $date,

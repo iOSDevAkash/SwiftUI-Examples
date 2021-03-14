@@ -19,20 +19,16 @@ struct AQHome: View {
                 NavigationLink(
                     destination: AQViewLayout(),
                     label: {
-                        CardView(floatingElements: ["Text"], title: "View Layout and Presentation", image: "star")
+                        CardView(floatingElements: ["Alert","Spacer","Divider","Hstack","VStack","ZStack","LazyHGrid","LazyVGrid","Forms","Form with Groups","GroupBox","Sections","List","ScrolView"], title: "View Layout and Presentation", image: "star")
                         
                     })
                 NavigationLink(
                     destination: DrawingAndAnimationHome(),
                     label: {
-                        CardView(floatingElements: ["Text"], title: "Drawing and Animation", image: "star")
+                        CardView(floatingElements: ["Shapes","Animations"], title: "Drawing and Animation", image: "star")
                         
                     })
-                NavigationLink(
-                    destination: Text("Destination"),
-                    label: {
-                        CardView(floatingElements: ["Text"], title: "others", image: "star")
-                    })
+                
             }.navigationTitle("Hello SwiftUI")
         }.navigationViewStyle(StackNavigationViewStyle())
         

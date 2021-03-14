@@ -190,7 +190,7 @@ struct ContentView: View {
                                 Text("Text Style")
                             }
                         }
-                        NavigationLink(destination: AQTextStyle()) {
+                        NavigationLink(destination: AQTextAlignment()) {
                             HStack{
                                 
                                 Image(systemName:value.Image)
